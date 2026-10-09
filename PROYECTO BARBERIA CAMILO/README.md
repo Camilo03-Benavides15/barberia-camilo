@@ -6,7 +6,7 @@ Sitio web adaptable para Barbería Camilo en Cali. El código está organizado e
 
 - `index.html`: servicios y carrito compartido.
 - `reserva.html`: captura los datos y el horario solicitado.
-- `pago.html`: muestra el abono del 50% y registra el método de pago preferido.
+- `pago.html`: muestra el abono del 30% y registra el método de pago preferido.
 - `confirmacion.html`: prepara el resumen para que el cliente lo confirme por WhatsApp.
 - `css/styles.css`: estilos, colores y diseño adaptable.
 - `js/`: menú, carrito y pasos de reserva.
@@ -28,6 +28,6 @@ Los servicios se agregan a un pedido compartido. Los tratamientos de mascarilla 
 
 La barbería atiende de lunes a viernes de 9:00 a. m. a 7:00 p. m., y sábados de 9:00 a. m. a 12:00 p. m. Los turnos propuestos comienzan cada 45 minutos. Las solicitudes deben confirmarse manualmente por WhatsApp al `+57 316 311 5300`.
 
-El flujo está en modo de demostración. El abono del 50% es obligatorio para continuar y el saldo restante se paga al finalizar el servicio. Se muestran Nequi (con el número ficticio `000 000 0000`), tarjeta y efectivo; ninguno de estos métodos procesa o verifica pagos. El botón para enviar la solicitud por WhatsApp aparece solamente después de pulsar «Confirmar abono de prueba». Esa acción es una simulación en el navegador y no constituye comprobante ni confirmación de una cita real. Para aceptar pagos de verdad se necesita conectar una pasarela o coordinar y verificar manualmente el abono.
+El flujo está en modo de demostración. Se solicita un abono del 30% para continuar; el 70% restante se paga al finalizar el servicio. Se muestran Nequi (con el número ficticio `000 000 0000`), tarjeta y efectivo; ninguno de estos métodos procesa o verifica pagos. El botón para enviar la solicitud por WhatsApp aparece solamente después de pulsar «Confirmar abono de prueba». Esa acción es una simulación en el navegador y no constituye comprobante ni confirmación de una cita real. Para aceptar pagos de verdad se necesita conectar una pasarela o coordinar y verificar manualmente el abono.
 
 Las fotografías de los servicios se cargan desde Unsplash y requieren conexión a internet.

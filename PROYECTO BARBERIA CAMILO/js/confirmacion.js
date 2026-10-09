@@ -16,7 +16,7 @@ if (savedOrder.length === 0 || !savedBooking || !["Tarjeta de crédito", "Nequi"
   window.location.replace(destination);
 } else {
   const total = savedOrder.reduce((sum, [, item]) => sum + item.price, 0);
-  const deposit = Math.ceil(total / 2);
+  const deposit = Math.ceil(total * 0.3);
   const lines = savedOrder.map(([, item]) => {
     const duration = item.duration ? ` (${item.duration})` : "";
     return `• ${item.name} — ${formatPrice(item.price)} COP${duration}`;
@@ -36,8 +36,8 @@ if (savedOrder.length === 0 || !savedBooking || !["Tarjeta de crédito", "Nequi"
     `Nombre: ${savedBooking.customerName}.`,
     `Mi WhatsApp: ${savedBooking.customerPhone}.`,
     `Total: ${formatPrice(total)} COP.`,
-    `Abono de prueba del 50%: ${formatPrice(deposit)} COP por ${paymentMethod}.`,
-    `Saldo del 50% al finalizar: ${formatPrice(total - deposit)} COP.`,
+    `Abono de prueba del 30%: ${formatPrice(deposit)} COP por ${paymentMethod}.`,
+    `Saldo del 70% al finalizar: ${formatPrice(total - deposit)} COP.`,
     "Esta es una solicitud de prueba; el pago no ha sido verificado.",
     "Por favor, confirma la disponibilidad de la fecha y hora."
   ].join("\n");
@@ -61,7 +61,7 @@ if (savedOrder.length === 0 || !savedBooking || !["Tarjeta de crédito", "Nequi"
   }
   const totalLine = document.createElement("p");
   totalLine.className = "checkout-summary-total";
-  totalLine.textContent = `Total: ${formatPrice(total)} COP · Abono requerido (50%): ${formatPrice(deposit)} COP`;
+  totalLine.textContent = `Total: ${formatPrice(total)} COP · Abono requerido (30%): ${formatPrice(deposit)} COP`;
   confirmationSummary.append(appointmentLine, serviceList, totalLine);
 
   const revealWhatsApp = () => {

@@ -10,7 +10,7 @@ if (savedOrder.length === 0 || !savedBooking) {
   window.location.replace(savedOrder.length === 0 ? "index.html#servicios" : "reserva.html");
 } else {
   const total = savedOrder.reduce((sum, [, item]) => sum + item.price, 0);
-  const deposit = Math.ceil(total / 2);
+  const deposit = Math.ceil(total * 0.3);
   const serviceList = document.createElement("ul");
   serviceList.className = "checkout-service-list";
   for (const [, item] of savedOrder) {
