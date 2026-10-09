@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171815">
+  <meta name="description" content="Elige la fecha y hora que prefieres para tu cita en Barbería Camilo.">
+  <title>Elige tu cita — Barbería Camilo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="checkout-page">
+  <header class="checkout-header">
+    <a class="brand" href="index.html#inicio" aria-label="Volver a Barbería Camilo">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span class="brand-name">BARBERSHOP SPA<span>CAMILO · CALI</span></span>
+    </a>
+    <a class="checkout-back" href="index.html#servicios">← Volver a servicios</a>
+  </header>
+  <main class="checkout-main">
+    <nav class="checkout-steps" aria-label="Progreso de la reserva">
+      <span class="checkout-step checkout-step-active"><span>1</span> Fecha y hora</span>
+      <span class="checkout-step"><span>2</span> Abono</span>
+      <span class="checkout-step"><span>3</span> Confirmación</span>
+    </nav>
+    <section class="checkout-card">
+      <p class="eyebrow eyebrow-dark"><span></span> TU PRÓXIMA VISITA</p>
+      <h1>Elige cuándo <em>venir.</em></h1>
+      <p class="checkout-intro">Déjanos tus datos y dinos qué día y hora prefieres. Confirmaremos la disponibilidad contigo por WhatsApp.</p>
+      <div class="checkout-summary" id="booking-summary" aria-live="polite"></div>
+      <form id="booking-form" class="checkout-form">
+        <label class="form-field">
+          <span>Tu nombre</span>
+          <input name="customerName" autocomplete="name" required maxlength="80" placeholder="¿Cómo te llamas?">
+        </label>
+        <label class="form-field">
+          <span>Tu WhatsApp</span>
+          <input name="customerPhone" type="tel" autocomplete="tel" required maxlength="25" placeholder="Tu número de contacto">
+        </label>
+        <label class="form-field">
+          <span>Fecha que prefieres</span>
+          <input name="date" id="appointment-date" type="date" required>
+        </label>
+        <label class="form-field">
+          <span>Hora que prefieres</span>
+          <select name="time" id="appointment-time" required disabled>
+            <option value="">Primero elige la fecha</option>
+          </select>
+        </label>
+        <p class="form-hint" id="schedule-hint">Atendemos de lunes a viernes, de 9:00 a. m. a 7:00 p. m., y sábados, de 9:00 a. m. a 12:00 p. m. Los turnos empiezan cada 45 minutos. Los domingos no atendemos.</p>
+        <p class="form-error" id="booking-error" role="alert" hidden></p>
+        <button class="button button-dark checkout-submit" type="submit">Continuar al abono <span aria-hidden="true">→</span></button>
+      </form>
+      <p class="checkout-disclaimer">La hora solicitada queda pendiente de confirmación por la barbería; esta página todavía no bloquea turnos en tiempo real.</p>
+    </section>
+  </main>
+  <script src="js/reserva.js"></script>
+</body>
+</html>

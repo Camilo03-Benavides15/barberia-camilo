@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171815">
+  <meta name="description" content="Revisa el abono de tu reserva en Barbería Camilo.">
+  <title>Abono de tu cita — Barbería Camilo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="checkout-page">
+  <header class="checkout-header">
+    <a class="brand" href="index.html#inicio" aria-label="Volver a Barbería Camilo">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span class="brand-name">BARBERSHOP SPA<span>CAMILO · CALI</span></span>
+    </a>
+    <a class="checkout-back" href="reserva.html">← Cambiar la cita</a>
+  </header>
+  <main class="checkout-main">
+    <nav class="checkout-steps" aria-label="Progreso de la reserva">
+      <span class="checkout-step checkout-step-done"><span>✓</span> Fecha y hora</span>
+      <span class="checkout-step checkout-step-active"><span>2</span> Abono</span>
+      <span class="checkout-step"><span>3</span> Confirmación</span>
+    </nav>
+    <section class="checkout-card">
+      <p class="eyebrow eyebrow-dark"><span></span> RESUMEN DE TU RESERVA</p>
+      <h1>Confirma tu <em>abono.</em></h1>
+      <p class="checkout-intro">Para solicitar la cita se requiere un abono del 50%. El otro 50% se paga al terminar el servicio.</p>
+      <div class="checkout-summary" id="payment-booking-summary" aria-live="polite"></div>
+      <div class="deposit-summary">
+        <div><span>Abono solicitado (50%)</span><strong id="deposit-amount"></strong></div>
+        <div><span>Saldo para pagar al finalizar (50%)</span><strong id="remaining-amount"></strong></div>
+        <div class="deposit-total"><span>Total de los servicios</span><strong id="deposit-total"></strong></div>
+      </div>
+      <form id="payment-form" class="checkout-form">
+        <fieldset class="payment-methods">
+          <legend>¿Cómo prefieres hacer el abono?</legend>
+          <label class="payment-method">
+            <input type="radio" name="paymentMethod" value="Tarjeta de crédito" required>
+            <span class="payment-method-icon" aria-hidden="true">▤</span>
+            <span><strong>Tarjeta</strong><small>Opción de demostración · no se realizará ningún cobro</small></span>
+          </label>
+          <label class="payment-method">
+            <input type="radio" name="paymentMethod" value="Nequi">
+            <span class="payment-method-icon" aria-hidden="true">N</span>
+            <span><strong>Nequi</strong><small>Número de prueba: <b>000 000 0000</b> · no envíes dinero</small></span>
+          </label>
+          <label class="payment-method">
+            <input type="radio" name="paymentMethod" value="Efectivo">
+            <span class="payment-method-icon" aria-hidden="true">$</span>
+            <span><strong>Efectivo</strong><small>El abono del 50% se entrega en el local · opción de demostración</small></span>
+          </label>
+        </fieldset>
+        <p class="payment-notice">Esta página está en modo de prueba: no procesa ni verifica pagos. El número de Nequi es ficticio. Al continuar, podrás confirmar un abono de demostración antes de mostrar el botón de WhatsApp.</p>
+        <p class="form-error" id="payment-error" role="alert" hidden></p>
+        <button class="button button-dark checkout-submit" type="submit">Continuar a la confirmación <span aria-hidden="true">→</span></button>
+      </form>
+    </section>
+  </main>
+  <script src="js/pago.js"></script>
+</body>
+</html>

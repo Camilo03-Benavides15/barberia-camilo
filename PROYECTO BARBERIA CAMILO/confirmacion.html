@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171815">
+  <meta name="description" content="Confirma los detalles de prueba de tu cita en Barbería Camilo.">
+  <title>Confirma tu cita — Barbería Camilo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="checkout-page">
+  <header class="checkout-header">
+    <a class="brand" href="index.html#inicio" aria-label="Barbershop spa Camilo, Cali">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span class="brand-name">BARBERSHOP SPA<span>CAMILO · CALI</span></span>
+    </a>
+  </header>
+  <main class="checkout-main confirmation-main">
+    <section class="checkout-card confirmation-card">
+      <div class="confirmation-mark" aria-hidden="true">✓</div>
+      <p class="eyebrow eyebrow-dark"><span></span> ÚLTIMO PASO DE PRUEBA</p>
+      <h1>Confirma el abono<br>para <em>continuar.</em></h1>
+      <p class="confirmation-message">Revisa tu cita y confirma el abono de prueba. Después podrás enviar la solicitud por WhatsApp para coordinar la fecha y la hora.</p>
+      <div class="checkout-summary" id="confirmation-summary" aria-live="polite"></div>
+      <section class="demo-deposit" aria-labelledby="demo-deposit-title">
+        <h2 id="demo-deposit-title">Abono requerido: <span id="demo-deposit-amount"></span></h2>
+        <p id="demo-payment-instructions"></p>
+        <p class="demo-warning">Modo de prueba: este paso no confirma ni verifica ningún pago. No envíes dinero al número ficticio.</p>
+        <button class="button button-dark checkout-submit demo-deposit-button" id="demo-deposit-button" type="button">Confirmar abono de prueba</button>
+      </section>
+      <a class="button button-dark checkout-submit whatsapp-confirm-button" id="whatsapp-confirm-button" href="#" target="_blank" rel="noopener noreferrer" hidden>Enviar solicitud por WhatsApp <span aria-hidden="true">↗</span></a>
+      <p class="payment-notice" id="whatsapp-confirmation-notice" hidden>La solicitud aún no confirma la disponibilidad de tu cita; espera la respuesta de la barbería por WhatsApp.</p>
+      <a class="confirmation-back" href="index.html#servicios">Volver a los servicios</a>
+    </section>
+  </main>
+  <script src="js/confirmacion.js"></script>
+</body>
+</html>

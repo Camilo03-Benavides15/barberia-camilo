@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171815">
+  <meta name="description" content="Barbershop spa: cortes, cejas, barba, mascarillas capilares y masajes capilares.">
+  <title>Barbershop spa — Cali</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Barbershop spa, inicio">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span class="brand-name">BARBERSHOP SPA<span>CAMILO · CALI</span></span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">La experiencia</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a class="nav-cta" href="#servicios">Ver precios <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> BARBERÍA · ESTILO · CALI</p>
+        <h1>Un buen corte<br>cambia <em>el día.</em></h1>
+        <p class="hero-copy">Tu estilo, en buenas manos. Ven por ese corte que ya te hacía falta.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#servicios">Descubre los servicios <span aria-hidden="true">↓</span></a>
+          <span class="hero-note">BUEN ESTILO, SIN COMPLICACIONES</span>
+        </div>
+      </div>
+      <div class="hero-index" aria-hidden="true"><span>01</span> / 03</div>
+      <a class="scroll-cue" href="#servicios"><span></span> DESLIZA PARA DESCUBRIR</a>
+    </section>
+
+    <section class="services section-pad" id="servicios">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow eyebrow-dark"><span></span> LO ESENCIAL, BIEN HECHO</p>
+          <h2>Tu próximo favorito.</h2>
+        </div>
+        <p class="section-intro">Detalles cuidados, buena conversación y el estilo que va contigo.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Barbero realizando un corte de cabello" loading="lazy">
+            <span class="service-number">01 / CLÁSICO</span>
+          </div>
+          <h3>Corte de cabello</h3>
+          <p>Un corte hecho a tu estilo, con buenos detalles y un acabado que se nota.</p>
+          <div class="service-price"><span>PRECIO</span><strong>$17.000</strong></div>
+          <button class="service-button service-add-button" type="button" data-name="Corte de cabello" data-price="17000">＋ Agregar al pedido</button>
+        </article>
+
+        <article class="service-card service-card-featured">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Detalle del trabajo de barbería y cuidado de barba" loading="lazy">
+            <span class="service-number">02 / DETALLES</span>
+          </div>
+          <h3>Cejas y barba</h3>
+          <p>Perfila tus cejas y barba para darle el toque final a tu estilo.</p>
+          <div class="service-price"><span>PRECIO</span><strong>$5.000</strong></div>
+          <button class="service-button service-add-button" type="button" data-name="Cejas y barba" data-price="5000">＋ Agregar al pedido</button>
+        </article>
+
+        <article class="service-card service-card-masks">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Cabello largo recibiendo cuidados en un salón" loading="lazy">
+            <span class="service-number">03 / CUIDADO CAPILAR</span>
+          </div>
+          <h3>Mascarillas capilares</h3>
+          <p>Elige el tratamiento ideal para tu cabello. Verás su precio y duración antes de agregarlo a tu pedido.</p>
+          <button class="service-button mask-options-toggle treatment-options-toggle" data-options-toggle="mask-options-panel" data-open-text="Ver opciones" data-close-text="Ocultar opciones" id="mask-options-toggle" type="button" aria-expanded="false" aria-controls="mask-options-panel">Ver opciones <span aria-hidden="true">＋</span></button>
+          <div class="mask-options-panel" id="mask-options-panel" hidden>
+            <fieldset class="mask-options treatment-options" aria-describedby="mask-selection-hint">
+              <legend>Elige uno o varios tratamientos</legend>
+              <label class="mask-option">
+                <input type="checkbox" name="mask-treatment" value="Hidratación Express" data-price="20000" data-duration="15–20 minutos">
+                <span class="mask-option-copy">
+                  <span class="mask-option-title">Hidratación Express</span>
+                  <span class="mask-option-meta">15–20 minutos</span>
+                  <span class="mask-option-description">Para cabello seco u opaco. Aporta suavidad y brillo; ideal como complemento al corte.</span>
+                </span>
+                <strong class="mask-option-price">$20.000</strong>
+              </label>
+              <label class="mask-option">
+                <input type="checkbox" name="mask-treatment" value="Mascarilla de Nutrición Profunda" data-price="30000" data-duration="20–30 minutos">
+                <span class="mask-option-copy">
+                  <span class="mask-option-title">Mascarilla de Nutrición Profunda</span>
+                  <span class="mask-option-meta">20–30 minutos</span>
+                  <span class="mask-option-description">Para cabello reseco y áspero. Ayuda a mejorar su suavidad y manejabilidad.</span>
+                </span>
+                <strong class="mask-option-price">$30.000</strong>
+              </label>
+              <label class="mask-option">
+                <input type="checkbox" name="mask-treatment" value="Mascarilla Reparadora de Proteínas" data-price="35000" data-duration="25–35 minutos">
+                <span class="mask-option-copy">
+                  <span class="mask-option-title">Mascarilla Reparadora de Proteínas</span>
+                  <span class="mask-option-meta">25–35 minutos</span>
+                  <span class="mask-option-description">Para cabello debilitado o maltratado. Ayuda a mejorar su resistencia y apariencia.</span>
+                </span>
+                <strong class="mask-option-price">$35.000</strong>
+              </label>
+              <label class="mask-option">
+                <input type="checkbox" name="mask-treatment" value="Mascarilla de Argán y Brillo" data-price="30000" data-duration="20–30 minutos">
+                <span class="mask-option-copy">
+                  <span class="mask-option-title">Mascarilla de Argán y Brillo</span>
+                  <span class="mask-option-meta">20–30 minutos</span>
+                  <span class="mask-option-description">Para cabello opaco o con frizz. Ayuda a dejarlo más brillante y fácil de peinar.</span>
+                </span>
+                <strong class="mask-option-price">$30.000</strong>
+              </label>
+              <label class="mask-option">
+                <input type="checkbox" name="mask-treatment" value="Hidratación Profunda con Vapor" data-price="45000" data-duration="35–45 minutos">
+                <span class="mask-option-copy">
+                  <span class="mask-option-title">Hidratación Profunda con Vapor</span>
+                  <span class="mask-option-meta">35–45 minutos</span>
+                  <span class="mask-option-description">Tratamiento con mascarilla y vapor para favorecer la hidratación del cabello.</span>
+                </span>
+                <strong class="mask-option-price">$45.000</strong>
+              </label>
+              <label class="mask-option">
+                <input type="checkbox" name="mask-treatment" value="Repolarización Capilar" data-price="50000" data-duration="40–50 minutos">
+                <span class="mask-option-copy">
+                  <span class="mask-option-title">Repolarización Capilar</span>
+                  <span class="mask-option-meta">40–50 minutos</span>
+                  <span class="mask-option-description">Tratamiento intensivo para cabello reseco o dañado, enfocado en mejorar textura, suavidad y aspecto.</span>
+                </span>
+                <strong class="mask-option-price">$50.000</strong>
+              </label>
+            </fieldset>
+            <p class="mask-selection-hint" id="mask-selection-hint">Elige los tratamientos que quieras; el total se actualizará automáticamente.</p>
+          </div>
+        </article>
+
+        <article class="service-card service-card-featured service-card-massages">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Tratamiento relajante realizado por una profesional" loading="lazy">
+            <span class="service-number">04 / RELAJACIÓN</span>
+          </div>
+          <h3>Masajes capilares</h3>
+          <p>Elige el masaje que prefieras para relajarte y consentir tu cabello. Revisa sus detalles, precio y duración.</p>
+          <button class="service-button mask-options-toggle treatment-options-toggle" data-options-toggle="massage-options-panel" data-open-text="Ver opciones" data-close-text="Ocultar opciones" id="massage-options-toggle" type="button" aria-expanded="false" aria-controls="massage-options-panel">Ver opciones <span aria-hidden="true">＋</span></button>
+          <div class="mask-options-panel" id="massage-options-panel" hidden>
+            <fieldset class="mask-options treatment-options" aria-describedby="massage-selection-hint">
+              <legend>Elige uno o varios masajes</legend>
+              <label class="mask-option">
+                <input type="checkbox" name="massage-treatment" value="Masaje Capilar Relajante" data-price="15000" data-duration="10 minutos">
+                <span class="mask-option-copy">
+                  <span class="mask-option-title">Masaje Capilar Relajante</span>
+                  <span class="mask-option-meta">10 minutos</span>
+                  <ul class="mask-option-description">
+                    <li>Lavado rápido del cabello.</li>
+                    <li>Masaje suave con las yemas de los dedos.</li>
+                    <li>Movimientos circulares en el cuero cabelludo, las sienes y la nuca.</li>
+                    <li>Finalización con toalla tibia.</li>
+                  </ul>
+                </span>
+                <strong class="mask-option-price">$15.000</strong>
+              </label>
+              <label class="mask-option">
+                <input type="checkbox" name="massage-treatment" value="Masaje Capilar con Aceites" data-price="20000" data-duration="15 minutos">
+                <span class="mask-option-copy">
+                  <span class="mask-option-title">Masaje Capilar con Aceites</span>
+                  <span class="mask-option-meta">15 minutos</span>
+                  <ul class="mask-option-description">
+                    <li>Aplicación de aceite capilar adecuado para el tipo de cabello.</li>
+                    <li>Masaje circular en todo el cuero cabelludo.</li>
+                    <li>Movimientos suaves para relajar y distribuir el producto.</li>
+                    <li>Lavado para retirar el exceso de aceite, si es necesario.</li>
+                  </ul>
+                </span>
+                <strong class="mask-option-price">$20.000</strong>
+              </label>
+              <label class="mask-option">
+                <input type="checkbox" name="massage-treatment" value="Masaje Capilar Premium" data-price="30000" data-duration="20 minutos">
+                <span class="mask-option-copy">
+                  <span class="mask-option-title">Masaje Capilar Premium</span>
+                  <span class="mask-option-meta">20 minutos</span>
+                  <ul class="mask-option-description">
+                    <li>Lavado del cabello con champú.</li>
+                    <li>Masaje relajante en el cuero cabelludo, las sienes y la nuca.</li>
+                    <li>Aplicación de tónico o producto capilar cosmético.</li>
+                    <li>Masaje con toalla tibia y peinado final.</li>
+                  </ul>
+                </span>
+                <strong class="mask-option-price">$30.000</strong>
+              </label>
+              <label class="mask-option">
+                <input type="checkbox" name="massage-treatment" value="Masaje Capilar con Hidratación" data-price="35000" data-duration="25 minutos">
+                <span class="mask-option-copy">
+                  <span class="mask-option-title">Masaje Capilar con Hidratación</span>
+                  <span class="mask-option-meta">25 minutos</span>
+                  <ul class="mask-option-description">
+                    <li>Lavado del cabello y aplicación de mascarilla hidratante.</li>
+                    <li>Masaje suave durante el tiempo de aplicación.</li>
+                    <li>Enjuague y acondicionador si se requiere.</li>
+                    <li>Secado y peinado básico.</li>
+                  </ul>
+                </span>
+                <strong class="mask-option-price">$35.000</strong>
+              </label>
+            </fieldset>
+            <p class="mask-selection-hint" id="massage-selection-hint">Elige los masajes que quieras; el total se actualizará automáticamente.</p>
+          </div>
+        </article>
+      </div>
+      <div class="mask-cart order-cart" id="mask-cart" aria-live="polite" hidden>
+        <div class="mask-cart-toolbar">
+          <div class="mask-cart-total">
+            <span>TOTAL DE TU PEDIDO</span>
+            <strong id="mask-cart-total">$0</strong>
+          </div>
+          <button class="mask-add-more-button" id="mask-options-add" type="button" aria-expanded="false">＋ Agregar más servicios</button>
+        </div>
+        <ul class="mask-cart-items" id="mask-cart-items"></ul>
+        <a class="service-button mask-booking-button" id="mask-booking-button" href="reserva.html">Elegir fecha y hora <span aria-hidden="true">→</span></a>
+      </div>
+      <p class="price-note">Precios en pesos colombianos. Escríbenos y reserva tu momento de cuidado.</p>
+    </section>
+
+    <section class="location section-pad" id="ubicacion">
+      <div class="location-card">
+        <div class="location-pin" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M38 20c0 11-14 23-14 23S10 31 10 20a14 14 0 1 1 28 0Z" stroke="currentColor" stroke-width="1.7"/><circle cx="24" cy="20" r="5" stroke="currentColor" stroke-width="1.7"/></svg>
+        </div>
+        <div class="location-copy">
+          <p class="eyebrow eyebrow-dark"><span></span> VEN A VISITARNOS</p>
+          <h2>Estamos en <em>Cali.</em></h2>
+          <p>Cali, Valle del Cauca, Colombia</p>
+        </div>
+        <a class="button button-dark location-link" href="https://www.google.com/maps/search/?api=1&query=barber%C3%ADa+Cali+Valle+del+Cauca" target="_blank" rel="noopener noreferrer">Ver Cali en el mapa <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="experience" id="nosotros">
+      <div class="experience-image" role="img" aria-label="Silla de barbería clásica en un espacio cálido"></div>
+      <div class="experience-content">
+        <p class="eyebrow"><span></span> MÁS QUE UN CORTE</p>
+        <h2>Haz una pausa.<br>Sal con <em>estilo.</em></h2>
+        <p>Un espacio para desconectarte un rato y volver a lo tuyo sintiéndote mejor. Sin afanes, sin complicaciones: solo buen trabajo.</p>
+        <a class="text-link" href="#servicios">Encuentra tu servicio <span aria-hidden="true">↗</span></a>
+        <span class="experience-stamp" aria-hidden="true">C<br><small>B</small></span>
+      </div>
+    </section>
+
+    <section class="closing section-pad">
+      <p class="eyebrow eyebrow-dark"><span></span> EL CAMBIO EMPIEZA EN LA SILLA</p>
+      <h2>¿Listo para verte <em>mejor?</em></h2>
+      <a class="button button-dark" href="#servicios">Elige tu servicio <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#inicio">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span class="brand-name">BARBERÍA<span>CAMILO · CALI</span></span>
+    </a>
+    <p>BUEN ESTILO. BUENA ENERGÍA.</p>
+    <a href="#inicio" class="back-top">VOLVER ARRIBA ↑</a>
+    <span class="copyright">© <span id="year"></span> BARBERÍA CAMILO</span>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
