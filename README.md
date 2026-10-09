@@ -23,6 +23,8 @@ Abre `PROYECTO BARBERIA CAMILO/index.html` en el navegador. Las imágenes y las 
 
 El pago está en modo de demostración: no se procesa ni verifica ningún abono. Nequi muestra un número ficticio; no envíes dinero. La confirmación de prueba solo permite revisar el recorrido y no confirma una cita real. Antes de aceptar pagos, conecta una pasarela segura y confirma la disponibilidad de los turnos.
 
+El formulario de reserva no solicita el número de teléfono. Si el cliente elige enviar la solicitud, debe pulsar «Enviar» en WhatsApp; la barbería verá el número de la cuenta que envía el mensaje.
+
 ## Publicación
 
 GitHub Pages publica automáticamente el contenido de `PROYECTO BARBERIA CAMILO/` cuando se actualiza la rama `main`.

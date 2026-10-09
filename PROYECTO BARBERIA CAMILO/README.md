@@ -24,7 +24,7 @@ Abre `index.html` en tu navegador. Las fotografías y las fuentes tipográficas 
 
 La ubicación publicada es Cali, Valle del Cauca. El botón de mapa abre una búsqueda de barberías en Cali; no se incluye una dirección exacta.
 
-Los servicios se agregan a un pedido compartido. Los tratamientos de mascarilla y masaje se seleccionan desde sus opciones desplegables; el resumen y total combinado se actualizan automáticamente. Se pueden quitar servicios o agregar más antes de elegir fecha, hora y método de abono.
+Los servicios se agregan a un pedido compartido. Los tratamientos de mascarilla y masaje se seleccionan desde sus opciones desplegables; el resumen y total combinado se actualizan automáticamente. Se pueden quitar servicios o agregar más antes de elegir fecha, hora y método de abono. El formulario no solicita el número del cliente; al enviar la solicitud por WhatsApp, la barbería verá el número de la cuenta que la envía.
 
 La barbería atiende de lunes a viernes de 9:00 a. m. a 7:00 p. m., y sábados de 9:00 a. m. a 12:00 p. m. Los turnos propuestos comienzan cada 45 minutos. Las solicitudes deben confirmarse manualmente por WhatsApp al `+57 316 311 5300`.
 

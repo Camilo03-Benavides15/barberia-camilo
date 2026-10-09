@@ -81,7 +81,6 @@ bookingForm.addEventListener("submit", (event) => {
 
   const booking = {
     customerName: String(formData.get("customerName")).trim(),
-    customerPhone: String(formData.get("customerPhone")).trim(),
     date: String(formData.get("date")),
     time: String(formData.get("time"))
   };

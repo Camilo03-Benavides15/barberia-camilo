@@ -34,7 +34,6 @@ if (savedOrder.length === 0 || !savedBooking || !["Tarjeta de crédito", "Nequi"
     `Fecha solicitada: ${dateText}.`,
     `Hora solicitada: ${savedBooking.time}.`,
     `Nombre: ${savedBooking.customerName}.`,
-    `Mi WhatsApp: ${savedBooking.customerPhone}.`,
     `Total: ${formatPrice(total)} COP.`,
     `Abono de prueba del 30%: ${formatPrice(deposit)} COP por ${paymentMethod}.`,
     `Saldo del 70% al finalizar: ${formatPrice(total - deposit)} COP.`,
